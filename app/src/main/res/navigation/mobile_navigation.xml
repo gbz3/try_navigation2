@@ -12,7 +12,11 @@
         tools:layout="@layout/fragment_home" >
         <action
             android:id="@+id/action_navigation_home_to_navigation_dashboard"
-            app:destination="@id/navigation_dashboard" />
+            app:destination="@id/navigation_dashboard"
+            app:enterAnim="@anim/nav_side_enter"
+            app:exitAnim="@anim/nav_side_exit"
+            app:popEnterAnim="@anim/nav_side_pop_enter"
+            app:popExitAnim="@anim/nav_side_pop_exit" />
         <action
             android:id="@+id/action_navigation_home_to_navigation_notifications"
             app:destination="@id/navigation_notifications" />
